@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dom.heaman">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListfoodActivity" />
+        <activity android:name=".caloriecalActivity" />
+        <activity android:name=".AddfoodActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".ListFoodItemAdapter" />
+        <activity android:name=".BMIActivity" />
+        <activity android:name=".ExportBarActivity" />
+        <activity android:name=".ListBarExportActivity" />
+        <activity android:name=".EditUserActivity" />
+        <activity android:name=".AddNFoodToDBActivity" />
+        <activity android:name=".ScanActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,2 +1,2 @@
-# Heaman
-App Android Theo dõi sức khỏe, tính Calorie nạp vào cơ thể
+﻿Giao diện đầu tiên
+ Hoàn thiện cơ bản giao diện Status

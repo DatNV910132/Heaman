@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.dom.heaman.ListFoodItemAdapter"
+    >
+
+<TextView
+    android:id="@+id/namefood"
+    android:layout_weight="3"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="ten"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    />
+<TextView
+    android:id="@+id/hangfood"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="hang"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    />
+<TextView
+    android:id="@+id/loaifood"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="loai"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    />
+<TextView
+    android:id="@+id/caloriefood"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="0000"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    />
+    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/text1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:gravity="center_vertical"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight">
+    </CheckedTextView>
+</LinearLayout>

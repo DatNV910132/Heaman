@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dom.heaman.ExportBarActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/nametab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Xuất mã Barcode thực phẩm"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Danh sách thực phẩm"
+            android:textSize="20dp"
+            />
+        <CheckBox
+            android:id="@+id/exbarselectall"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Chọn tất cả"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/exbarlistfood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/btnexbar"
+                android:background="#189EFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:text="Xuất"
+                android:textColor="#ffffff"
+                />
+
+            <Button
+                android:id="@+id/btnexbarcancel"
+                android:background="#189EFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Hủy chọn"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

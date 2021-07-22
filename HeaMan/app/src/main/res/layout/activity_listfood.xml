@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dom.heaman.ListfoodActivity">
+
+    <TextView
+        android:id="@+id/testgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách thực phẩm"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:id="@+id/lnsearch"
+        android:layout_below="@id/testgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:layout_weight="4"
+            android:id="@+id/listedsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm"
+            />
+
+    </LinearLayout>
+    <Spinner
+        android:layout_margin="5dp"
+        android:layout_below="@id/lnsearch"
+        android:id="@+id/spinnerbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    </Spinner>
+    <LinearLayout
+        android:id="@+id/lnheader1"
+        android:layout_below="@id/spinnerbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Tên thực phẩm"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Hãng"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Loại"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calo"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <ListView
+        android:layout_below="@id/lnheader1"
+        android:id="@+id/listfood"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</RelativeLayout>
